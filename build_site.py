@@ -221,14 +221,15 @@ def main():
         rel = src.relative_to(KB)
         out = (DOCS / "kb" / rel).with_suffix(".html")
         title, body = render_md(src)
-        depth = len(rel.parts) - 1
-        base = "../" * depth
+        # 页面位于 docs/kb/<rel>，base 需包含 kb/ 这一层：目录数 = len(rel.parts)
+        base = "../" * len(rel.parts)
         html = page_html(title, body, base, f"知识库 · {title}",
                          extra_after=(print_card if "索引" not in src.name and src.name[0] != "0" else ""))
         write(out, html)
         n += 1
         if src.name == "00_知识库总索引.md":
-            kb_index_html = page_html(title, body, "", f"知识库 · {title}")
+            # docs/kb/index.html 在 kb/ 下，base 为上一级
+            kb_index_html = page_html(title, body, "../", f"知识库 · {title}")
 
     if kb_index_html:
         write(DOCS / "kb" / "index.html", kb_index_html)
