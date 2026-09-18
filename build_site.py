@@ -113,9 +113,9 @@ NAV = """<nav class="site-nav">
 </nav>"""
 
 KATEX = """
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+<link rel="stylesheet" href="__BASE__assets/katex/katex.min.css">
+<script defer src="__BASE__assets/katex/katex.min.js"></script>
+<script defer src="__BASE__assets/katex/auto-render.min.js"
   onload="renderMathInElement(document.body,{delimiters:[
     {left:'$$',right:'$$',display:true},
     {left:'$',right:'$',display:false}
@@ -138,6 +138,7 @@ def fix_links(html):
 def page_html(title, body_html, base, desc="", extra_after=""):
     t = html_mod.escape(title, quote=True)
     d = html_mod.escape(desc, quote=True)
+    katex = KATEX.replace("__BASE__", base)
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -146,7 +147,7 @@ def page_html(title, body_html, base, desc="", extra_after=""):
 <title>{t} · {SITE_NAME}</title>
 <meta name="description" content="{d}">
 <link rel="stylesheet" href="{base}assets/style.css">
-{KATEX}
+{katex}
 </head>
 <body>
 <header class="site-header"><div class="wrap">
@@ -183,6 +184,7 @@ def main():
         shutil.rmtree(DOCS)
     (DOCS / "assets").mkdir(parents=True)
     write(DOCS / "assets" / "style.css", CSS)
+    shutil.copytree(ROOT / "assets" / "katex", DOCS / "assets" / "katex")
     write(DOCS / ".nojekyll", "")
 
     n = 0
