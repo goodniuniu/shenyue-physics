@@ -28,7 +28,7 @@
 | vite 中文路径 GBK 修复 + HTML 标题转义修复 | ✅ `vite.config.js`、`build_site.py`（page_html 已加 html.escape） |
 | GitHub Pages 部署说明 | ✅ `部署说明_GitHubPages.md` |
 
-**注意：项目尚未推送 GitHub**（用户未提供账号信息），网站仅本地构建验证过。
+**注意：本地 git 已初始化并完成首次提交（main 分支），尚未推送 GitHub**（等用户创建远程仓库），网站仅本地构建验证过。
 
 ## 3. 关键假设（v2 修订，仍需用户确认）
 
@@ -72,7 +72,7 @@ package.json                        # dev: vite docs --config vite.config.js
 5. **杀进程要杀树**：`netstat -ano | grep ":<port>"` 找 PID 后 `taskkill //F //T //PID <pid>`。**绝不留服务器运行**。
 6. **Windows 控制台 GBK**：Python 脚本避免 print 中文/emoji；文件读写一律 `encoding="utf-8"`。
 7. markdown-it-py 必须 `.disable("linkify")`（环境未装 linkify-it-py）。
-8. KaTeX 走 CDN 渲染 `$...$` / `$$...$$`，预览/上线需联网。
+8. KaTeX 已**本地化**（`assets/katex/` 随构建拷入 `docs/assets/katex/`，只保留 woff2 字体约 608K），不再依赖 jsdelivr CDN（国内被墙导致公式不渲染）。KATEX 模板用 `__BASE__` 占位符（不能 `.format()`，auto-render 配置里有花括号）。离线也能渲染。
 9. 卡片间链接是中文相对路径 `.md`，构建时统一重写为 `.html`（fix_links），目录镜像保证相对路径有效。
 10. PDF 提取文本中公式符号大量丢失（图片/特殊字体），只可用于检索考点，做题用原卷 PDF。
 11. **reportlab 打印包三坑**（`build_print_pack.py` 已处理）：CJK 字体缺 Unicode 上下标字形 → 用 `<sub>/<super>` 标签；✅⚠️❌ 等 emoji 缺字形 → conv() 映射为"已掌握/待强化/未理解"；含 HTML 标签的标题要先包 `<b>` 再过 conv（conv 会转义）。质检用 kimi-pdf skill 渲染逐页目检。
