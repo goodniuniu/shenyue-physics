@@ -203,6 +203,10 @@ def main():
          "写给很久没碰物理的家长：山坡类比建立静电场直觉、批改四问清单与答疑"),
         (ROOT / "家长支持" / "家长物理速成指南_动量篇.md", "parent-guide-momentum.html", "家长物理速成指南 · 动量篇",
          "30分钟建立动量直觉、三道能讲给孩子听的例题、批改四问清单"),
+        (ROOT / "家长支持" / "家长提问卡_费曼回话题库.md", "parent-questions.html", "家长提问卡 · 费曼回话题库",
+         "家长照原话问、看关键词打钩：静电场12问+动量10问+光与振动波8问，每天睡前15分钟"),
+        (ROOT / "家长支持" / "错题入库速查_考后三步.md", "mistake-intake.html", "考后错题入库速查",
+         "月考后三步走：拍照→发给Kimi→查看失分分析，错题自动变卡片"),
     ]
     extra_guide = '<button class="print-btn" onclick="window.print()">🖨️ 打印速查表</button>'
     for src, out, fb_title, desc in singles:
@@ -211,7 +215,7 @@ def main():
             continue
         title, body = render_md(src)
         write(DOCS / out, page_html(title, body, "", desc,
-                                    extra_after=(extra_guide if out.startswith("parent-guide") else "")))
+                                    extra_after=(extra_guide if out.startswith("parent") else "")))
         n += 1
 
     # 2) 知识库镜像
@@ -269,6 +273,12 @@ def main():
 <p>2025.10 华附/执信/铁一/二中月考真题逐题归纳：静电场是最大公约数，选必一因校而异。</p></a>
 <a class="card" href="kb/index.html"><div class="icon">📚</div><h3>物理知识库</h3>
 <p>23 张卡片：知识卡 14 + 思想方法 5 + 概念检验三件套 3 + 真题分析 1，张张可打印，碎片时间自测。</p></a>
+<a class="card" href="parent-questions.html"><div class="icon">🎤</div><h3>家长提问卡 · 30 问</h3>
+<p>您照原话问、看关键词打钩：每天睡前 15 分钟费曼回讲，零物理基础也能用。</p></a>
+<a class="card" href="kb/复盘追踪/艾宾浩斯复习日历_中秋起.html"><div class="icon">🗓️</div><h3>艾宾浩斯复习日历</h3>
+<p>按 1/2/4/7/15 天记忆曲线排好的打卡表（9.25–10.12），每天 10–20 分钟对抗遗忘。</p></a>
+<a class="card" href="mistake-intake.html"><div class="icon">📥</div><h3>考后错题入库</h3>
+<p>月考后三步走：拍照 → 发给 Kimi → 收失分分析，错题自动变卡片滚雪球。</p></a>
 </section>
 
 <div class="section-title">🗓️ 项目时间线</div>

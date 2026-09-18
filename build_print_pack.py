@@ -257,7 +257,7 @@ def later_pages(canvas, doc):
     w, h = A4
     canvas.setFont("DaimonCJK", 8.5)
     canvas.setFillColor(MUTED)
-    canvas.drawString(2.2 * cm, h - 1.3 * cm, "中秋打印包 · 物理（概念检验 + 陷阱清单 + 思想方法速查）")
+    canvas.drawString(2.2 * cm, h - 1.3 * cm, "中秋打印包 · 物理（概念检验 + 陷阱清单 + 思想方法速查 + 家长提问卡）")
     canvas.drawRightString(w - 2.2 * cm, h - 1.3 * cm, "申悦学习 2026.9")
     canvas.setStrokeColor(HexColor("#dddddd"))
     canvas.line(2.2 * cm, h - 1.5 * cm, w - 2.2 * cm, h - 1.5 * cm)
@@ -281,13 +281,14 @@ story = []
 story.append(Spacer(1, 3.2 * cm))
 story.append(Paragraph("中秋打印包 · 物理", S["title"]))
 story.append(Spacer(1, 0.4 * cm))
-story.append(Paragraph("概念检验三件套 + 陷阱清单 + 思想方法速查", S["subtitle"]))
+story.append(Paragraph("概念检验三件套 + 陷阱清单 + 思想方法速查 + 家长提问卡", S["subtitle"]))
 story.append(Paragraph("中秋假期 2026.9.25–9.27 · 备战高二第一次月考", S["subtitle"]))
 story.append(Spacer(1, 1.2 * cm))
 cover_items = [
     "第一部分　概念检验三件套：静电场 30 问 / 动量 30 问 / 光与振动波 30 问",
     "第二部分　陷阱清单：静电场 10 条 / 动量 8 条（考前 10 分钟只看这个）",
     "第三部分　思想方法速查五表：守恒 / 图像 / 类比 / 临界字典 / 定义式与仪式",
+    "第四部分　家长提问卡 30 问：照原话问、看关键词打钩（每天睡前 15 分钟）",
 ]
 for it in cover_items:
     story.append(Paragraph(conv(it), ParagraphStyle(
@@ -403,6 +404,26 @@ story.append(three_line_table(t, [2.4 * cm, 6.0 * cm, 7.6 * cm]))
 story.append(Spacer(1, 8))
 story.append(Paragraph(conv("两个动笔仪式：矢量题先念「正方向是……」，静电场题先念「符号带全……」。"
                             "三个先约定：正方向、零势点、参考系——先声明，后一致。"), S["note"]))
+
+story.append(PageBreak())
+
+# 第四部分：家长提问卡（费曼回话题库）
+story.append(Paragraph("第四部分　家长提问卡（费曼回话题库 30 问）", S["h1"]))
+story.append(P("家长照「您这样问」原话提问，孩子口头回答；对照「过关信号」里的关键词，意思对就打 √，"
+               "磕绊标 ⚠️、答不上标 ❌。答不上就去最后一列指路的卡片复习。每天睡前 5 题，错了别纠正，"
+               "说「再讲讲」就好。"))
+story.append(Spacer(1, 8))
+
+QUESTIONS_MD = ROOT / "家长支持" / "家长提问卡_费曼回话题库.md"
+Q_SECTIONS = ["静电场（12 问）", "动量（10 问）", "光与振动波（8 问）"]
+q_tables = parse_md_tables(read_md(QUESTIONS_MD))[:3]
+for si, (sec_name, qt) in enumerate(zip(Q_SECTIONS, q_tables)):
+    story.append(Paragraph(sec_name, S["h2"]))
+    # 表头：# / 您这样问 / 过关信号 / 不会就去看
+    story.append(three_line_table(
+        [["#", "您这样问", "过关信号（听到这些意思就 √）", "不会就去看"]] + qt[1:],
+        [0.9 * cm, 5.6 * cm, 6.3 * cm, 3.4 * cm]))
+    story.append(Spacer(1, 10))
 
 # ---------- 构建 ----------
 doc = SimpleDocTemplate(str(OUT_PDF), pagesize=A4,
