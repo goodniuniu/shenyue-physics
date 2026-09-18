@@ -76,6 +76,8 @@ package.json                        # dev: vite docs --config vite.config.js
 9. 卡片间链接是中文相对路径 `.md`，构建时统一重写为 `.html`（fix_links），目录镜像保证相对路径有效。
 10. PDF 提取文本中公式符号大量丢失（图片/特殊字体），只可用于检索考点，做题用原卷 PDF。
 11. **reportlab 打印包三坑**（`build_print_pack.py` 已处理）：CJK 字体缺 Unicode 上下标字形 → 用 `<sub>/<super>` 标签；✅⚠️❌ 等 emoji 缺字形 → conv() 映射为"已掌握/待强化/未理解"；含 HTML 标签的标题要先包 `<b>` 再过 conv（conv 会转义）。质检用 kimi-pdf skill 渲染逐页目检。
+12. **kb 页面相对路径 = `"../" * len(rel.parts)`**（页面在 docs/kb/ 下，kb/ 本身也算一层）；`kb/index.html` 用 `"../"`。曾因少算一级导致全部知识库页面样式+KaTeX 404，公式显示原始 `$...$`（2026-09-18 修复）。
+13. **定时任务**：「物理知识库 · 每周日晚复盘」（automation_838b11e7，每周日 20:17 Asia/Shanghai，local_conversation，复盘后自动 build_site.py + push）。由旧的"2028广东新高考知识库·周复盘"改造而来。
 
 ## 6. 常用工作流（用户会直接下的指令）
 
