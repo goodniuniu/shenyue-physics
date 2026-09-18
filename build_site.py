@@ -187,6 +187,13 @@ def main():
     shutil.copytree(ROOT / "assets" / "katex", DOCS / "assets" / "katex")
     write(DOCS / ".nojekyll", "")
 
+    # 打印包 PDF 同步到 docs/print/，供网站下载
+    print_src = ROOT / "打印包"
+    if print_src.exists():
+        (DOCS / "print").mkdir(exist_ok=True)
+        for pdf in print_src.glob("*.pdf"):
+            shutil.copy2(pdf, DOCS / "print" / pdf.name)
+
     n = 0
 
     # 1) 根级单页
@@ -251,6 +258,8 @@ def main():
 </section>
 
 <section class="cards">
+<a class="card" href="print/中秋打印包_物理.pdf" download><div class="icon">🖨️</div><h3>中秋打印包 · 点击下载</h3>
+<p>A4 共 11 页：概念检验 30 问 ×3（含答案）+ 易错陷阱卡 ×2 + 思想方法速查表 ×5，打印店打开本页即可下载打印。</p></a>
 <a class="card" href="plan.html"><div class="icon">📅</div><h3>中秋 3 天辅导计划（v2）</h3>
 <p>9.25 真题诊断 + 静电场地基 → 9.26 静电场题型突破 + 机动板块 → 9.27 真题模拟与错题复盘，每天约 4 小时。</p></a>
 <a class="card" href="parent-guide.html"><div class="icon">👨‍👧</div><h3>家长速成指南 · 静电场篇</h3>
