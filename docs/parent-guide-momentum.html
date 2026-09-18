@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>家长物理速成指南 · 动量篇 · 申悦学习 · AI 指导物理学习</title>
+<meta name="description" content="30分钟建立动量直觉、三道能讲给孩子听的例题、批改四问清单">
+<link rel="stylesheet" href="assets/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[
+    {left:'$$',right:'$$',display:true},
+    {left:'$',right:'$',display:false}
+  ]});"></script>
+
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">🌕 申悦学习 · AI 指导物理学习</a>
+<nav class="site-nav">
+<a href="index.html">首页</a>
+<a href="plan.html">3天辅导计划</a>
+<a href="parent-guide.html">速成指南·静电场</a>
+<a href="parent-guide-momentum.html">速成指南·动量</a>
+<a href="kb/index.html">知识库</a>
+</nav>
+</div></header>
+<main class="page">
+<h1>家长物理速成指南 · 动量篇</h1>
+<blockquote>
+<p>写给很久没碰物理的家长：辅导申悦之前，请花 30 分钟读完这份指南。
+你不需要会做题。读完它，你能做到三件事：<strong>听懂她在学什么、看出作业错在哪、接住她的提问。</strong></p>
+</blockquote>
+<hr />
+<h2>第 0 关：5 分钟，建立直觉</h2>
+<h3>三个必须认识的词</h3>
+<table>
+<thead>
+<tr>
+<th>词</th>
+<th>是什么</th>
+<th>一句话直觉</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>动量</strong>（p = 质量 × 速度）</td>
+<td>形容&quot;一个物体撞过来有多难挡&quot;</td>
+<td>同样速度，卡车比自行车动量大得多；同样质量，越快越难挡</td>
+</tr>
+<tr>
+<td><strong>冲量</strong>（I = 力 × 时间）</td>
+<td>力推了一段时间攒下的&quot;改变量&quot;</td>
+<td>安全气囊把碰撞时间拉长 → 同样的动量变化，需要的力就小 → 人不受伤</td>
+</tr>
+<tr>
+<td><strong>动量守恒</strong></td>
+<td>系统内部互相作用，总动量不变</td>
+<td>冰面上两个人互相推开：一个向左、一个向右，动量一正一负，加起来还是零</td>
+</tr>
+</tbody>
+</table>
+<h3>动量定理（本章第一公式）</h3>
+<pre><code>力 × 作用时间 = 动量的改变量        （Ft = mv′ − mv）
+</code></pre>
+<p>就像攒钱：每天存一点（力作用一会儿），账户余额（动量）就变化一点。</p>
+<h3>为什么孩子在这章容易栽跟头</h3>
+<p>动量是<strong>矢量</strong>——有方向。式子里只要丢了正负号，整道题就错了。所以&quot;写正方向&quot;是本章第一习惯，也是你检查作业的第一要点。</p>
+<hr />
+<h2>第 1 关：三个核心考点，各配一道你能看懂的例题</h2>
+<h3>考点 1：动量定理（Ft = Δp）</h3>
+<blockquote>
+<p>例：质量 2 kg 的小车，初速度 4 m/s，受水平拉力 10 N 作用 3 秒，末速度是多少？</p>
+</blockquote>
+<ul>
+<li>拉力冲量 = 10 × 3 = <strong>30</strong></li>
+<li>速度变化 = 30 ÷ 2 = <strong>15</strong>（冲量分给 2 kg，每 kg 分到 15 的速度）</li>
+<li>末速度 = 4 + 15 = <strong>19 m/s</strong></li>
+</ul>
+<p><strong>你可以这样讲给孩子听</strong>：&quot;力推了 3 秒，攒下 30 的运动量，分给 2 kg 的车，每千克分到 15 的速度。&quot;</p>
+<h3>考点 2：碰撞与动量守恒</h3>
+<blockquote>
+<p>例：2 kg 的小球以 3 m/s 撞向静止的 1 kg 小球，撞后粘在一起，共同速度是多少？</p>
+</blockquote>
+<ul>
+<li>撞前总动量 = 2 × 3 + 1 × 0 = <strong>6</strong></li>
+<li>撞后总质量 = 3 kg → 共同速度 = 6 ÷ 3 = <strong>2 m/s</strong></li>
+</ul>
+<p><strong>核心思想</strong>：碰撞过程&quot;动量总量不变&quot;，只是重新分配。</p>
+<h3>考点 3：判断碰撞结果合不合理（选择题高频）</h3>
+<p>遇到&quot;碰后速度可能是多少&quot;的选择题，依次问三句：</p>
+<ol>
+<li><strong>动量守恒吗？</strong>（撞前总动量 = 撞后总动量）</li>
+<li><strong>动能变多了吗？</strong>（碰撞中动能只许不变或少，<strong>不许多</strong>——能量不能凭空造出来）</li>
+<li><strong>会不会再撞一次？</strong>（同向时，后面的速度必须 ≤ 前面的，否则会追尾再碰）</li>
+</ol>
+<hr />
+<h2>第 2 关：不会物理也能用的&quot;批改四问清单&quot;</h2>
+<p>每次她做完题，你照着问（看式子和答案就能问，不需要会算）：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>问题</th>
+<th>看什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>正方向写了吗？</strong></td>
+<td>式子里有没有 +/− 号；一道题从头到尾符号规则统一吗</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>单位统一吗？</strong></td>
+<td>km/h 要换成 m/s，克要换成千克</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>能量合理吗？</strong></td>
+<td>碰撞后总动能应 ≤ 碰前；弹簧弹开、爆炸反而应 &gt; 碰前</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>答案像话吗？</strong></td>
+<td>速度比原来大得多？出现负数但没说方向？都要她解释</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>只要这四问能答上来，这道题基本靠谱；答不上来的地方，就是回讲环节要攻的点。</p>
+</blockquote>
+<hr />
+<h2>第 3 关：她可能问你的 4 个问题（附参考答案）</h2>
+<p><strong>1. &quot;动量和动能到底有什么区别？&quot;</strong>
+动量讲&quot;撞起来多难挡&quot;，是矢量（有方向），由&quot;力 × 时间&quot;改变；动能讲&quot;能做多少功&quot;，是标量，由&quot;力 × 距离&quot;改变。刹车距离用动能算，撞墙冲击力用动量算。</p>
+<p><strong>2. &quot;为什么碰撞瞬间可以忽略重力？&quot;</strong>
+碰撞力非常大、时间非常短，重力的影响相比之下可以忽略——就像海啸来的时候，没人会提雨滴。</p>
+<p><strong>3. &quot;什么时候用动量定理，什么时候用牛顿第二定律？&quot;</strong>
+题目要&quot;时间&quot;或者力是变化的 → 用动量定理；要&quot;加速度&quot;或某个瞬间的细节 → 用牛顿第二定律。</p>
+<p><strong>4. &quot;人在小船上向前走，船为什么会后退？&quot;</strong>
+开始人和船都不动，总动量为零。人向前获得动量，船必须获得同样大小、向后的动量，总动量才能保持为零。人停船也停。</p>
+<hr />
+<h2>第 4 关：三天里你的支持动作（对照执行）</h2>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>你做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每天上午开练前</td>
+<td>只说一句：&quot;按卡片来，卡住就喊我。&quot;然后离开，不围观</td>
+</tr>
+<tr>
+<td>每天晚饭后 15 分钟</td>
+<td>回讲时间：她讲、你问。用&quot;四问清单&quot;和下方话术</td>
+</tr>
+<tr>
+<td>她卡壳时</td>
+<td>先等 30 秒；再提示&quot;看看卡片第几步&quot;；<strong>不直接讲答案</strong></td>
+</tr>
+<tr>
+<td>她做对时</td>
+<td>具体地夸：&quot;刚才你主动写了正方向，这就是这章的关键习惯。&quot;（夸行为，不夸聪明）</td>
+</tr>
+<tr>
+<td>每晚睡前</td>
+<td>问她一句：&quot;今天哪道题最有成就感？&quot;——带着成就感入睡</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第 5 关：一页速查表（考前贴在书桌前）</h2>
+<pre><code>动量 p = mv（有方向！）          冲量 I = Ft
+动量定理：Ft = mv′ − mv          先定正方向，再代数
+动量守恒：撞前总动量 = 撞后总动量（系统不受外力时）
+弹性碰撞：动能也不变             粘在一起（完全非弹性）：动能损失最大
+
+碰撞三问：动量守恒吗？动能变多没？会不会二次碰撞？
+
+能量去向：摩擦生热 Q = f × 相对位移
+反冲/爆炸：动量守恒，动能反而增加
+
+检查四问：正方向？单位？能量合理？答案像话？
+</code></pre>
+<hr />
+<h2>最后：你不需要完美</h2>
+<p>她需要的不是你懂物理，而是<strong>遇到难题时有人一起面对</strong>。遇到你们都答不上来的问题，打开<a href="kb/00_%E7%9F%A5%E8%AF%86%E5%BA%93%E6%80%BB%E7%B4%A2%E5%BC%95.html">知识库</a>找对应卡片，或者直接把题目发给我，我来帮她讲。</p>
+<p>沟通话术与情绪支持的完整版本见：<a href="kb/%E6%96%B9%E6%B3%95/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95_%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95_%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95%EF%BC%9A%E8%AE%A9%E5%AD%A9%E5%AD%90%E8%AE%B2%E7%BB%99%E4%BD%A0%E5%90%AC.html">费曼学习法：让孩子讲给你听</a>、<a href="kb/%E6%96%B9%E6%B3%95/%E5%BF%83%E7%90%86%E5%BB%BA%E8%AE%BE/%E6%96%B9%E6%B3%95_%E5%BF%83%E7%90%86%E5%BB%BA%E8%AE%BE_%E8%80%83%E8%AF%95%E5%89%8D%E7%9A%84%E7%84%A6%E8%99%91%E5%AF%B9%E8%AF%9D%E4%B8%8E%E9%BC%93%E5%8A%B1.html">考试前的焦虑对话与鼓励</a>。</p>
+
+</main>
+<button class="print-btn" onclick="window.print()">🖨️ 打印速查表</button>
+<footer class="footer"><div class="wrap">
+<span>陪伴申悦一路到 2028 高考</span>
+<span>内容维护：修改 Markdown 源文件后运行 <code>python build_site.py</code> 重新生成</span>
+</div></footer>
+</body>
+</html>

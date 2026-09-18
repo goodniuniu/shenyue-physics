@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【电容器与带电粒子在电场中的运动】 · 申悦学习 · AI 指导物理学习</title>
+<meta name="description" content="知识库 · 【电容器与带电粒子在电场中的运动】">
+<link rel="stylesheet" href="../../assets/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[
+    {left:'$$',right:'$$',display:true},
+    {left:'$',right:'$',display:false}
+  ]});"></script>
+
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../../index.html">🌕 申悦学习 · AI 指导物理学习</a>
+<nav class="site-nav">
+<a href="../../index.html">首页</a>
+<a href="../../plan.html">3天辅导计划</a>
+<a href="../../parent-guide.html">速成指南·静电场</a>
+<a href="../../parent-guide-momentum.html">速成指南·动量</a>
+<a href="../../kb/index.html">知识库</a>
+</nav>
+</div></header>
+<main class="page">
+<h1>【电容器与带电粒子在电场中的运动】</h1>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>来源</strong></td>
+<td>人教版必修三第十章；2025.10 执信卷题 6/10/12/14/15、华附卷题 15</td>
+</tr>
+<tr>
+<td><strong>时间标签</strong></td>
+<td>#高二深化</td>
+</tr>
+<tr>
+<td><strong>难度</strong></td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td><strong>状态</strong></td>
+<td>❌未理解</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>核心内容</h2>
+<h3>一、电容器</h3>
+<pre><code>C = Q/U                    （定义式，C 与 Q、U 无关）
+C = ε_rS/(4πkd)            （平行板电容器决定式）
+E = U/d                    （板间匀强电场）
+</code></pre>
+<p><strong>两类动态分析（执信卷题 6 压力传感器原型）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情形</th>
+<th>不变量</th>
+<th>分析链</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>始终接电源</td>
+<td><strong>U 不变</strong></td>
+<td>d↓→C↑→Q↑；E=U/d 随 d 变</td>
+</tr>
+<tr>
+<td>充电后断开</td>
+<td><strong>Q 不变</strong></td>
+<td>d↓→C↑→U↓；而 $E=\dfrac{4\pi kQ}{\varepsilon_r S}$ <strong>与 d 无关</strong>，只随 S、ε_r 变</td>
+</tr>
+</tbody>
+</table>
+<h3>二、电容器充放电实验（执信卷题 12）</h3>
+<ul>
+<li>$i\text{-}t$ 图线与坐标轴围成的<strong>面积 = 电荷量 Q</strong>；改变 R 只改变充放电快慢，面积（总电荷量）不变。</li>
+<li>充电：电流从最大值指数衰减到 0；放电电流方向相反。</li>
+</ul>
+<h3>三、带电粒子在电场中的加速与偏转（示波器模型，执信卷题 10 原模型）</h3>
+<p><strong>加速</strong>（电压 $U_1$）：</p>
+<p>$$qU_1 = \frac{1}{2}mv_0^2 ;\Rightarrow; v_0=\sqrt{\frac{2qU_1}{m}}$$</p>
+<p><strong>偏转</strong>（电压 $U_2$、板长 $l$、板距 $d$）——类平抛运动：</p>
+<p>$$y = \frac{1}{2}at^2 = \frac{qU_2 l^2}{2mdv_0^2} = \frac{U_2 l^2}{4U_1 d},\qquad \tan\theta = \frac{v_y}{v_0} = \frac{U_2 l}{2U_1 d}$$</p>
+<blockquote>
+<p>关键结论：偏转角 $\tan\theta$ 与偏转量 $y$ <strong>与 q、m 无关</strong>（只取决于电压和几何）——执信卷题 10 的核心考点。
+常用技巧：偏转后速度的反向延长线过<strong>板中央水平中点</strong>（类平抛推论）。</p>
+</blockquote>
+<h3>四、月考压轴风格：电场 + 多过程综合</h3>
+<p>执信卷题 15（多区域电场 + 圆周运动）、题 14（弹簧 + 电场 + 圆弧轨道）、华附卷题 15（库仑力 + 弹簧 + 摩擦）的共同套路：</p>
+<ol>
+<li><strong>分过程</strong>：每换一种受力情况画一条分界线。</li>
+<li>每个过程选工具：匀变速 → 牛顿定律或动能定理；只看始末 → 动能定理优先。</li>
+<li>电场力做功计入动能定理：$W_{电} + W_{摩} + W_{弹} + \cdots = \Delta E_k$。</li>
+</ol>
+<hr />
+<h2>🗣️ 费曼讲解（讲给零基础的人听）</h2>
+<p>电容器就是一个&quot;存电的水桶&quot;：电量 Q 是水量，电压 U 是水位差，电容 C 是桶的粗细。接着电源等于水龙头开着——水位差被死死按住不变；断开电源等于关了龙头——水量不变，水位差随桶形变化。带电粒子偏转则是&quot;先弹弓后平抛&quot;：先被加速电压像弹弓一样射出去，再进偏转电场走一个标准的平抛曲线。</p>
+<h2>📝 解题示范（一道典型题完整流程）</h2>
+<blockquote>
+<p>题（执信卷题 10 原型）：加速电压 $U_1=200,\text{V}$，偏转电压 $U_2=50,\text{V}$，板长 $l=4,\text{cm}$，板距 $d=2,\text{cm}$。求偏转角正切，并判断换用不同比荷的粒子偏转角是否改变。</p>
+</blockquote>
+<ol>
+<li>直接套结论：$\tan\theta = \dfrac{U_2 l}{2U_1 d} = \dfrac{50\times 0.04}{2\times 200\times 0.02} = \dfrac{2}{8} = 0.25$。</li>
+<li>公式里没有 $q$、$m$ → <strong>偏转角与粒子种类无关</strong>。</li>
+<li>但射出动能 $E_k = qU_1 + qE\cdot y$ 含 $q$ → 电荷量不同的粒子<strong>动能不同</strong>。</li>
+<li><strong>检验</strong>：&quot;偏转角相同、动能未必相同&quot;正是该题正确选项的组合逻辑 ✅</li>
+</ol>
+<h2>✅ 复盘要点（自测清单，能讲清即打勾）</h2>
+<ul>
+<li>[ ] 接电源（U 不变）与断开（Q 不变）两条分析链能默写</li>
+<li>[ ] Q 不变时 $E=\dfrac{4\pi kQ}{\varepsilon_r S}$ 与 d 无关，能解释为什么</li>
+<li>[ ] i-t 图面积 = 电荷量 Q，改 R 只改快慢不改面积</li>
+<li>[ ] $\tan\theta = \dfrac{U_2l}{2U_1d}$ 能默写并说出&quot;与 q、m 无关&quot;</li>
+<li>[ ] 多区域电场题会&quot;画分界、逐段动能定理/类平抛&quot;</li>
+</ul>
+<hr />
+<h2>关联卡片</h2>
+<ul>
+<li><a href="%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%BD%91%E7%BB%9C_%E7%94%B5%E5%8A%BF%E4%B8%8E%E7%94%B5%E5%8A%BF%E8%83%BD.html">电势与电势能</a> — $W=qU$ 与能量观点</li>
+<li><a href="../%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95/%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95_%E9%9D%99%E7%94%B5%E5%9C%BA%E6%9C%88%E8%80%83%E9%A2%98%E5%9E%8B%E5%BD%92%E7%BA%B3.html">静电场月考题型归纳</a></li>
+<li><a href="../%E6%98%93%E9%94%99%E8%AD%A6%E7%A4%BA%E4%B8%8E%E8%BE%A8%E6%9E%90/%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E6%98%93%E9%94%99%E8%AD%A6%E7%A4%BA%E4%B8%8E%E8%BE%A8%E6%9E%90_%E9%9D%99%E7%94%B5%E5%9C%BA%E5%B8%B8%E8%A7%81%E9%99%B7%E9%98%B1.html">静电场常见陷阱</a></li>
+</ul>
+<hr />
+<h2>备注</h2>
+<ul>
+<li>判断&quot;油滴/尘埃悬浮&quot;类题（执信卷题 3 密立根原型）：平衡条件 $qE=mg$，先由电场方向定电荷正负，再看改变 U 或 d 对 E 的影响。</li>
+</ul>
+
+</main>
+<button class="print-btn" onclick="window.print()">🖨️ 打印本页</button>
+<footer class="footer"><div class="wrap">
+<span>陪伴申悦一路到 2028 高考</span>
+<span>内容维护：修改 Markdown 源文件后运行 <code>python build_site.py</code> 重新生成</span>
+</div></footer>
+</body>
+</html>

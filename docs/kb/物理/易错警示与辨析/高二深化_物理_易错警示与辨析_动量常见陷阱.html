@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【动量常见陷阱】知识点的精准命名 · 申悦学习 · AI 指导物理学习</title>
+<meta name="description" content="知识库 · 【动量常见陷阱】知识点的精准命名">
+<link rel="stylesheet" href="../../assets/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[
+    {left:'$$',right:'$$',display:true},
+    {left:'$',right:'$',display:false}
+  ]});"></script>
+
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../../index.html">🌕 申悦学习 · AI 指导物理学习</a>
+<nav class="site-nav">
+<a href="../../index.html">首页</a>
+<a href="../../plan.html">3天辅导计划</a>
+<a href="../../parent-guide.html">速成指南·静电场</a>
+<a href="../../parent-guide-momentum.html">速成指南·动量</a>
+<a href="../../kb/index.html">知识库</a>
+</nav>
+</div></header>
+<main class="page">
+<h1>【动量常见陷阱】知识点的精准命名</h1>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>来源</strong></td>
+<td>人教版选择性必修一 第一章 + 月考典型失分点归纳</td>
+</tr>
+<tr>
+<td><strong>时间标签</strong></td>
+<td>#高二深化</td>
+</tr>
+<tr>
+<td><strong>难度</strong></td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td><strong>状态</strong></td>
+<td>❌未理解</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>核心内容</h2>
+<h3>陷阱 1：动量变化量是矢量差</h3>
+<ul>
+<li>错误：$\Delta p = mv' - mv$ 直接算数值差。</li>
+<li>正确：先定正方向（或正交分解）。往返运动回到原处，Δp 不为零而是 $2mv$（反向情况）。</li>
+<li>例：质量 1 kg 小球以 5 m/s 撞墙原速反弹，取初速度为正，$\Delta p = (-5) - 5 = -10\ \mathrm{kg·m/s}$，不是 0。</li>
+</ul>
+<h3>陷阱 2：动量定理中的 F 是&quot;合外力&quot;</h3>
+<ul>
+<li>物体受多个力时，只代入某一个力就错了；必须先受力分析求合力（或求合冲量）。</li>
+<li>变力问题：用 F–t 图面积求冲量。</li>
+</ul>
+<h3>陷阱 3：系统选错导致守恒条件误判</h3>
+<ul>
+<li>含弹簧、含地面的系统尤其要小心：弹簧是内力（系统守恒），但地面对木块的摩擦力是外力。</li>
+<li>粗糙地面上&quot;滑块+木板&quot;系统受地面摩擦力 → <strong>动量不守恒</strong>，只能用牛顿定律 + 运动学或动量定理分段处理。</li>
+</ul>
+<h3>陷阱 4：碰撞结果忘记检验&quot;合理性&quot;</h3>
+<ul>
+<li>动量守恒、动能不增都满足，但碰后后面的物体比前面的还快 → 不可能（会二次碰撞）。</li>
+<li>检验口诀：<strong>动量守恒 → 动能不增 → 速度位置合理</strong>，三条缺一不可。</li>
+</ul>
+<h3>陷阱 5：速度不统一参考系</h3>
+<ul>
+<li>题给&quot;相对速度&quot;（如子弹相对木块）必须换算成对地速度再列守恒式。</li>
+<li>人船模型求出的 $x_1, x_2$ 是相对地面的位移，别与相对位移混淆。</li>
+</ul>
+<h3>陷阱 6：弹性碰撞公式记混</h3>
+<ul>
+<li>分母都是 $m_1+m_2$；$v_1'$ 分子是 &quot;$(m_1-m_2)v_1 + 2m_2v_2$&quot;——&quot;自己减对方，加上两倍对方乘对方速度&quot;。</li>
+<li>不放心就现场联立&quot;动量 + 动能&quot;两式推导，考试也只需 1 分钟。</li>
+</ul>
+<h3>陷阱 7：混淆&quot;冲量&quot;与&quot;功&quot;</h3>
+<ul>
+<li>有力就有冲量（I = Ft 与位移无关）；但力不做功就没有能量变化。</li>
+<li>匀速圆周运动一周：合外力冲量为零，动能变化为零——两个结论都对，别互相推导错。</li>
+</ul>
+<h3>陷阱 8：反冲/爆炸当碰撞处理</h3>
+<ul>
+<li>碰撞动能不增，爆炸反冲动能<strong>增加</strong>；求能量时符号别搞反。</li>
+</ul>
+<hr />
+<h2>🗣️ 费曼讲解（讲给零基础的人听）</h2>
+<p>动量题的坑，十有八九是同一个字：<strong>方向</strong>。动量是矢量，往左往右是反的；&quot;撞墙反弹回来，动量变化是零吗？&quot;——不是，是翻倍（方向反了）。另一半坑是&quot;系统&quot;：把谁圈进系统、外力算不算零，圈错一步满盘皆输。做题时养成两个口头仪式——动笔前先念&quot;正方向是……&quot;，列守恒式前先念&quot;系统是……外力是……&quot;，八条陷阱就废了七条。</p>
+<h2>📝 解题示范（一道典型题完整流程）</h2>
+<blockquote>
+<p>题：质量 $1,\text{kg}$ 的小球以 $5,\text{m/s}$ 撞墙后原速反弹，求墙对小球的冲量。</p>
+</blockquote>
+<ol>
+<li>错误做法：$\Delta p = 5-5 = 0$ → 冲量为零 ❌（陷阱 1：把矢量差当数值差）。</li>
+<li>正确做法：取初速度方向为正，$v'=-5,\text{m/s}$，$\Delta p = m v' - m v = -5-5 = -10,\text{kg·m/s}$。</li>
+<li>冲量大小 $10,\text{N·s}$，方向与初速度相反。</li>
+<li><strong>检验</strong>：球明明被弹回来了，运动状态大变，冲量绝不可能是零 ✅</li>
+</ol>
+<h2>✅ 复盘要点（自测清单，能讲清即打勾）</h2>
+<ul>
+<li>[ ] 8 条陷阱能不看卡复述至少 5 条</li>
+<li>[ ] 动笔前念&quot;正方向&quot;、列守恒式前念&quot;系统与外力&quot;已成仪式</li>
+<li>[ ] 月考/模拟踩过的坑已按&quot;日期+题号&quot;记到对应条目后</li>
+<li>[ ] 弹性碰撞公式不放心时能用 1 分钟现场推导</li>
+</ul>
+<hr />
+<h2>关联卡片</h2>
+<ul>
+<li><a href="../%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%BD%91%E7%BB%9C/%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%BD%91%E7%BB%9C_%E5%8A%A8%E9%87%8F%E4%B8%8E%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86.html">动量与动量定理</a></li>
+<li><a href="../%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95/%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95_%E7%A2%B0%E6%92%9E%E7%B1%BB%E6%A8%A1%E5%9E%8B%E9%80%9A%E6%B3%95.html">碰撞类模型通法</a></li>
+<li><a href="../%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95/%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95_%E6%9D%BF%E5%9D%97%E4%B8%8E%E5%AD%90%E5%BC%B9%E6%89%93%E6%9C%A8%E5%9D%97%E6%A8%A1%E5%9E%8B.html">板块与子弹打木块模型</a></li>
+</ul>
+<hr />
+<h2>备注</h2>
+<ul>
+<li>建议：把月考中踩过的坑写在对应陷阱条目后（日期 + 原题位置），逐步变成个人专属&quot;避坑清单&quot;。</li>
+</ul>
+
+</main>
+<button class="print-btn" onclick="window.print()">🖨️ 打印本页</button>
+<footer class="footer"><div class="wrap">
+<span>陪伴申悦一路到 2028 高考</span>
+<span>内容维护：修改 Markdown 源文件后运行 <code>python build_site.py</code> 重新生成</span>
+</div></footer>
+</body>
+</html>

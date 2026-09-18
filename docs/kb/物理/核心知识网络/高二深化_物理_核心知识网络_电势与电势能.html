@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【电势与电势能】静电场的「能量」之核心 · 申悦学习 · AI 指导物理学习</title>
+<meta name="description" content="知识库 · 【电势与电势能】静电场的「能量」之核心">
+<link rel="stylesheet" href="../../assets/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[
+    {left:'$$',right:'$$',display:true},
+    {left:'$',right:'$',display:false}
+  ]});"></script>
+
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../../index.html">🌕 申悦学习 · AI 指导物理学习</a>
+<nav class="site-nav">
+<a href="../../index.html">首页</a>
+<a href="../../plan.html">3天辅导计划</a>
+<a href="../../parent-guide.html">速成指南·静电场</a>
+<a href="../../parent-guide-momentum.html">速成指南·动量</a>
+<a href="../../kb/index.html">知识库</a>
+</nav>
+</div></header>
+<main class="page">
+<h1>【电势与电势能】静电场的「能量」之核心</h1>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>来源</strong></td>
+<td>人教版必修三第十章；2025.10 执信/华附月考真题（电势、等势面、φ-x 图像高频出现）</td>
+</tr>
+<tr>
+<td><strong>时间标签</strong></td>
+<td>#高二深化</td>
+</tr>
+<tr>
+<td><strong>难度</strong></td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td><strong>状态</strong></td>
+<td>❌未理解</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>核心内容</h2>
+<h3>关键概念（用&quot;山坡&quot;类比一次记牢）</h3>
+<table>
+<thead>
+<tr>
+<th>物理量</th>
+<th>类比</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>电势 $\varphi$</td>
+<td>海拔高度</td>
+<td>电场本身的属性，与放不放电荷无关；沿电场线方向降低</td>
+</tr>
+<tr>
+<td>电势差 $U_{AB}=\varphi_A-\varphi_B$</td>
+<td>高度差</td>
+<td>与零势点选取无关</td>
+</tr>
+<tr>
+<td>电势能 $E_p = q\varphi$</td>
+<td>物体的重力势能</td>
+<td>属于&quot;电荷+电场&quot;系统；<strong>有正负</strong>，$q$ 带符号代入</td>
+</tr>
+<tr>
+<td>电场力做功 $W_{AB}=qU_{AB}$</td>
+<td>重力做功</td>
+<td>只与始末位置有关，与路径无关</td>
+</tr>
+</tbody>
+</table>
+<h3>核心公式</h3>
+<pre><code>φ = E_p/q          （电势定义式，E_p、q 均带符号）
+U_AB = W_AB/q      （电势差定义式）
+W_AB = -ΔE_p = E_pA - E_pB   （电场力做正功，电势能减小）
+E = U/d            （仅匀强电场，d 为沿场强方向的距离）
+</code></pre>
+<blockquote>
+<p>注意事项：所有公式中 $q$、$W$、$U$ 都要<strong>带正负号</strong>运算，这是本章计算题第一大失分点（华附卷题 14 四问连考）。</p>
+</blockquote>
+<h3>方法步骤：判断电势能/动能变化（华附卷题 5、题 10 类型）</h3>
+<ol>
+<li>判断电场力方向（正电荷顺 E、负电荷逆 E）。</li>
+<li>看电场力做正功还是负功：正功 → 电势能减、动能增（仅电场力时）。</li>
+<li>能量守恒兜底：只有电场力做功时 $E_k + E_p$ = 常量。</li>
+</ol>
+<h3>φ-x 图像与等势面</h3>
+<ul>
+<li>$\varphi\text{-}x$ 图像<strong>斜率的负值 = 场强</strong> $E_x$；斜率绝对值大处场强大。</li>
+<li>等势面：与电场线处处垂直；沿等势面移动电荷电场力不做功；匀强电场的等差等势面间距相等。</li>
+<li>找等势点 → 连线得等势线 → 作垂线得电场线方向（华附卷题 4 菱形、题 7 圆形区域均用此法）。</li>
+</ul>
+<h3>记忆口诀</h3>
+<blockquote>
+<p>&quot;电势像海拔，顺线往下压；负电反着看，势能 qφ 乘；做功看首尾，正负别落下。&quot;</p>
+</blockquote>
+<hr />
+<h2>🗣️ 费曼讲解（讲给零基础的人听）</h2>
+<p>电势就是&quot;海拔高度&quot;，电势差就是&quot;高度差&quot;，电场力做功就是&quot;搬石头上下山&quot;。搬石头做多少功，只取决于起点和终点的高度差，跟你走哪条山路无关——电场力做功也一样，只看首尾电势差。唯一的&quot;妖&quot;是负电荷：它是一块会往天上飘的石头，海拔越高，它的&quot;势能&quot;反而越小。所以一切公式里 $q$ 都要带符号。</p>
+<h2>📝 解题示范（一道典型题完整流程）</h2>
+<blockquote>
+<p>题（华附卷题 14 原型）：把 $q=+2\times10^{-8},\text{C}$ 的电荷从无穷远移到电场中 P 点，克服电场力做功 $2\times10^{-6},\text{J}$。求 P 点电势；若在 P 点放 $q'=-1\times10^{-8},\text{C}$ 的电荷，其电势能是多少？</p>
+</blockquote>
+<ol>
+<li>&quot;克服电场力做功&quot;→ 电场力做功 $W = -2\times10^{-6},\text{J}$，电势能<strong>增加</strong> $2\times10^{-6},\text{J}$。</li>
+<li>无穷远为零势点：$E_{pP} = 2\times10^{-6},\text{J}$。</li>
+<li>$\varphi_P = \dfrac{E_{pP}}{q} = \dfrac{2\times10^{-6}}{2\times10^{-8}} = 100,\text{V}$。</li>
+<li>负电荷：$E_p' = q'\varphi_P = (-1\times10^{-8})\times 100 = -1\times10^{-6},\text{J}$（<strong>负号必须带</strong>）。</li>
+<li><strong>检验</strong>：负电荷在正电势处电势能为负——与&quot;负电荷的石头往上飘&quot;一致 ✅</li>
+</ol>
+<h2>✅ 复盘要点（自测清单，能讲清即打勾）</h2>
+<ul>
+<li>[ ] $W=qU$、$E_p=q\varphi$ 全程带符号，负电荷情形不翻车</li>
+<li>[ ] 能一句话说清&quot;电势是场自己的，电势能是电荷+场合有的&quot;</li>
+<li>[ ] φ-x 图像：斜率负值 = 场强，能举例判断</li>
+<li>[ ] 沿等势面移动不做功；跨等势面只看首尾、不看路径</li>
+<li>[ ] 只有电场力做功时 $E_k+E_p$ 守恒，会用它校验答案</li>
+</ul>
+<hr />
+<h2>关联卡片</h2>
+<ul>
+<li><a href="%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%BD%91%E7%BB%9C_%E7%94%B5%E5%9C%BA%E5%BC%BA%E5%BA%A6%E4%B8%8E%E5%BA%93%E4%BB%91%E5%AE%9A%E5%BE%8B.html">电场强度与库仑定律</a></li>
+<li><a href="%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%BD%91%E7%BB%9C_%E7%94%B5%E5%AE%B9%E5%99%A8%E4%B8%8E%E5%B8%A6%E7%94%B5%E7%B2%92%E5%AD%90%E5%9C%A8%E7%94%B5%E5%9C%BA%E4%B8%AD%E7%9A%84%E8%BF%90%E5%8A%A8.html">电容器与带电粒子在电场中的运动</a></li>
+<li><a href="../%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95/%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95_%E9%9D%99%E7%94%B5%E5%9C%BA%E6%9C%88%E8%80%83%E9%A2%98%E5%9E%8B%E5%BD%92%E7%BA%B3.html">静电场月考题型归纳</a></li>
+</ul>
+<hr />
+<h2>备注</h2>
+<ul>
+<li>零势点约定：点电荷电场取无穷远为零；接地问题取大地为零。电势零点变了，电势数值变，但<strong>电势差不变</strong>。</li>
+<li>执信卷题 5（匀强电场中两段做功）、题 13（W=qU 三步计算）是本节最标准的月考题型，务必会做。</li>
+</ul>
+
+</main>
+<button class="print-btn" onclick="window.print()">🖨️ 打印本页</button>
+<footer class="footer"><div class="wrap">
+<span>陪伴申悦一路到 2028 高考</span>
+<span>内容维护：修改 Markdown 源文件后运行 <code>python build_site.py</code> 重新生成</span>
+</div></footer>
+</body>
+</html>

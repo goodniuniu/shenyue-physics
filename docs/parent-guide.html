@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>家长物理速成指南 · 静电场篇 · 申悦学习 · AI 指导物理学习</title>
+<meta name="description" content="写给很久没碰物理的家长：山坡类比建立静电场直觉、批改四问清单与答疑">
+<link rel="stylesheet" href="assets/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[
+    {left:'$$',right:'$$',display:true},
+    {left:'$',right:'$',display:false}
+  ]});"></script>
+
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">🌕 申悦学习 · AI 指导物理学习</a>
+<nav class="site-nav">
+<a href="index.html">首页</a>
+<a href="plan.html">3天辅导计划</a>
+<a href="parent-guide.html">速成指南·静电场</a>
+<a href="parent-guide-momentum.html">速成指南·动量</a>
+<a href="kb/index.html">知识库</a>
+</nav>
+</div></header>
+<main class="page">
+<h1>家长物理速成指南 · 静电场篇</h1>
+<blockquote>
+<p>写给很久没碰物理的家长：这是本项目的第二份速成指南。
+依据 2025 年 10 月广州四校月考真题，静电场是这次月考最可能的主干内容，优先级高于动量篇。
+老规矩，你不需要会做题。读完它，你能做到三件事：<strong>听懂她在学什么、看出作业错在哪、接住她的提问。</strong></p>
+</blockquote>
+<hr />
+<h2>第 0 关：5 分钟，建立直觉</h2>
+<h3>用&quot;山坡&quot;一次记住三个词</h3>
+<table>
+<thead>
+<tr>
+<th>词</th>
+<th>是什么</th>
+<th>一句话直觉</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>电场强度 E</strong></td>
+<td>电场&quot;推电荷的劲&quot;有多大</td>
+<td>像<strong>山坡的陡度</strong>：坡越陡，球滚得越猛；场越强，电荷受力越大</td>
+</tr>
+<tr>
+<td><strong>电势 φ</strong></td>
+<td>电场中某点的&quot;高度&quot;</td>
+<td>像<strong>海拔</strong>：山顶电势高，山脚电势低；沿电场线方向电势一路下降</td>
+</tr>
+<tr>
+<td><strong>电势能 E_p = qφ</strong></td>
+<td>电荷在某点具有的&quot;位置能量&quot;</td>
+<td>像<strong>山顶上的石头</strong>：海拔越高，石头势能越大——但负电荷是&quot;倒过来的石头&quot;，海拔越高它势能反而越小</td>
+</tr>
+</tbody>
+</table>
+<h3>本章第一公式</h3>
+<pre><code>电场力做功 = 电荷量 × 电势差        （W = qU）
+</code></pre>
+<p>就像把石头从山顶搬到山脚：重力做的功 = 重量 × 高度差。电场里完全同理。</p>
+<h3>为什么孩子在这章容易栽跟头</h3>
+<p>全是<strong>符号</strong>：电荷有正负、电势差有正负、做功有正负。式子里丢一个负号，整道题就错了。所以&quot;符号带全&quot;是本章第一习惯，也是你检查作业的第一要点。</p>
+<hr />
+<h2>第 1 关：三个核心考点，各配一道你能看懂的例题</h2>
+<h3>考点 1：电场力做功与电势能（计算题必考）</h3>
+<blockquote>
+<p>例：把 +2 C 的电荷从 A 点移到 B 点，电场力做了 −6 J 的功（即克服电场力做功 6 J），A、B 间电势差 U = W/q = −6 ÷ 2 = <strong>−3 V</strong>。说明 B 点电势比 A 低 3 V。</p>
+</blockquote>
+<p><strong>你可以这样讲给孩子听</strong>：&quot;做功除以电荷量就是电势差，跟搬石头：功 ÷ 重量 = 高度差，一个道理。负数说明是往下走。&quot;</p>
+<h3>考点 2：电容器两条链（选择题必考）</h3>
+<p>电容器 = 存电荷的&quot;水桶&quot;：水量 Q、水位差 U、桶的容量 C = Q/U。</p>
+<ul>
+<li><strong>接着电源</strong> → 水龙头开着，<strong>水位差 U 不变</strong>，改变桶的宽窄（极板间距）只会改变水量。</li>
+<li><strong>断开电源</strong> → 水龙头关了，<strong>水量 Q 不变</strong>，拉开极板水位差会变化，但&quot;坡的陡度 E&quot;只取决于水量和桶底面积，<strong>和间距无关</strong>（反直觉，月考爱考）。</li>
+</ul>
+<h3>考点 3：带电粒子偏转（示波器模型）</h3>
+<p>粒子先在&quot;加速电场&quot;里被推到一定速度，再进入&quot;偏转电场&quot;做类平抛运动（水平匀速 + 竖直匀加速，和平抛一模一样的配方）。</p>
+<p><strong>核心结论</strong>：偏转角只由电压和板的几何决定，<strong>与粒子本身的电荷、质量无关</strong>——选择题见到&quot;不同粒子偏转角不同&quot;基本是错的。</p>
+<hr />
+<h2>第 2 关：不会物理也能用的&quot;批改四问清单&quot;（静电场版）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>问题</th>
+<th>看什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>符号带全了吗？</strong></td>
+<td>q、W、U 的正负号写没写；&quot;克服电场力做功&quot;有没有翻译成负号</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>哪个公式？</strong></td>
+<td>定义式（E=F/q、C=Q/U）还是决定式（E=kQ/r²、C=εS/4πkd）——用错公式是全错</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>谁不变？</strong></td>
+<td>电容器题先问&quot;接着电源（U 不变）还是断开（Q 不变）&quot;，答不出这步后面全白算</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>能量去哪了？</strong></td>
+<td>只有电场力做功时，动能 + 电势能应该不变；两个都增大一定是错的</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第 3 关：她可能问你的 4 个问题（附参考答案）</h2>
+<p><strong>1. &quot;电势和电势能到底有什么区别？&quot;</strong>
+电势是&quot;这个位子海拔多高&quot;，是电场自己的属性，不放电荷它也在；电势能是&quot;这块石头在这个海拔有多少能量&quot;，必须有电荷才有。关系：电势能 = 电荷量 × 电势。</p>
+<p><strong>2. &quot;为什么负电荷在电势高的地方电势能反而小？&quot;</strong>
+因为电势能 = q × φ，q 是负的，φ 越大乘出来越小。就像负电荷是一块&quot;会往上飘的石头&quot;，海拔越高它越&quot;没劲&quot;。</p>
+<p><strong>3. &quot;电场线是电荷跑的路线吗？&quot;</strong>
+不是。电场线只表示力的方向；电荷跑哪条线还取决于它的初速度。只有&quot;从静止释放 + 电场线是直线&quot;时才会沿着线跑。</p>
+<p><strong>4. &quot;手机电容屏、电容话筒和电容器是一回事吗？&quot;</strong>
+原理同源：都是两个导体隔层绝缘体存电荷。考试不考应用细节，但电容器&quot;谁不变&quot;的动态分析必考。</p>
+<hr />
+<h2>第 4 关：三天里你的支持动作（对照执行）</h2>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>你做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每天上午开练前</td>
+<td>只说一句：&quot;按卡片来，卡住就喊我。&quot;然后离开，不围观</td>
+</tr>
+<tr>
+<td>每天晚饭后 15 分钟</td>
+<td>回讲时间：她讲、你问。用&quot;四问清单&quot;和话术</td>
+</tr>
+<tr>
+<td>她卡壳时</td>
+<td>先等 30 秒；再提示&quot;看看卡片第几步&quot;；<strong>不直接讲答案</strong></td>
+</tr>
+<tr>
+<td>她做对时</td>
+<td>具体地夸：&quot;刚才你负电荷的符号带对了，这就是这章最容易丢的分。&quot;（夸行为，不夸聪明）</td>
+</tr>
+<tr>
+<td>每晚睡前</td>
+<td>问她一句：&quot;今天哪道题最有成就感？&quot;——带着成就感入睡</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第 5 关：一页速查表（考前贴在书桌前）</h2>
+<pre><code>电场强度 E = F/q（定义式）     点电荷 E = kQ/r²（决定式，别混用）
+电势 φ：像海拔，沿电场线降低      电势能 E_p = qφ（负电荷反着来！）
+电场力做功 W = qU（符号带全）     做正功 → 电势能减、动能增
+
+电容器：接电源 U 不变 / 断开 Q 不变
+偏转：类平抛，tanθ = U₂l / (2U₁d)，与 q、m 无关
+
+检查四问：符号？定义式还是决定式？谁不变？能量去哪了？
+</code></pre>
+<hr />
+<h2>最后：你不需要完美</h2>
+<p>她需要的不是你懂物理，而是<strong>遇到难题时有人一起面对</strong>。遇到你们都答不上来的问题，打开<a href="kb/00_%E7%9F%A5%E8%AF%86%E5%BA%93%E6%80%BB%E7%B4%A2%E5%BC%95.html">知识库</a>找对应卡片（静电场 5 张新卡已就位），或者直接把题目发给我，我来帮她讲。</p>
+<p>如果学校实际考的是动量为主，请配合使用<a href="%E5%AE%B6%E9%95%BF%E7%89%A9%E7%90%86%E9%80%9F%E6%88%90%E6%8C%87%E5%8D%97_%E5%8A%A8%E9%87%8F%E7%AF%87.html">动量篇</a>。沟通话术与情绪支持见：<a href="kb/%E6%96%B9%E6%B3%95/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95_%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95_%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95%EF%BC%9A%E8%AE%A9%E5%AD%A9%E5%AD%90%E8%AE%B2%E7%BB%99%E4%BD%A0%E5%90%AC.html">费曼学习法</a>、<a href="kb/%E6%96%B9%E6%B3%95/%E5%BF%83%E7%90%86%E5%BB%BA%E8%AE%BE/%E6%96%B9%E6%B3%95_%E5%BF%83%E7%90%86%E5%BB%BA%E8%AE%BE_%E8%80%83%E8%AF%95%E5%89%8D%E7%9A%84%E7%84%A6%E8%99%91%E5%AF%B9%E8%AF%9D%E4%B8%8E%E9%BC%93%E5%8A%B1.html">考试前的焦虑对话与鼓励</a>。</p>
+
+</main>
+<button class="print-btn" onclick="window.print()">🖨️ 打印速查表</button>
+<footer class="footer"><div class="wrap">
+<span>陪伴申悦一路到 2028 高考</span>
+<span>内容维护：修改 Markdown 源文件后运行 <code>python build_site.py</code> 重新生成</span>
+</div></footer>
+</body>
+</html>

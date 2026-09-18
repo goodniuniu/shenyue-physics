@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【板块与子弹打木块模型】知识点的精准命名 · 申悦学习 · AI 指导物理学习</title>
+<meta name="description" content="知识库 · 【板块与子弹打木块模型】知识点的精准命名">
+<link rel="stylesheet" href="../../assets/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[
+    {left:'$$',right:'$$',display:true},
+    {left:'$',right:'$',display:false}
+  ]});"></script>
+
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../../index.html">🌕 申悦学习 · AI 指导物理学习</a>
+<nav class="site-nav">
+<a href="../../index.html">首页</a>
+<a href="../../plan.html">3天辅导计划</a>
+<a href="../../parent-guide.html">速成指南·静电场</a>
+<a href="../../parent-guide-momentum.html">速成指南·动量</a>
+<a href="../../kb/index.html">知识库</a>
+</nav>
+</div></header>
+<main class="page">
+<h1>【板块与子弹打木块模型】知识点的精准命名</h1>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>来源</strong></td>
+<td>人教版选择性必修一 第一章 + 名校月考高频题归纳</td>
+</tr>
+<tr>
+<td><strong>时间标签</strong></td>
+<td>#高二深化</td>
+</tr>
+<tr>
+<td><strong>难度</strong></td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td><strong>状态</strong></td>
+<td>❌未理解</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>核心内容</h2>
+<h3>模型总图</h3>
+<p>一个物体以速度 $v_0$ 进入/滑上另一个可动物体（木块、小车、木板），通过<strong>摩擦力/阻力</strong>相互作用。核心双主线：</p>
+<ul>
+<li><strong>动量</strong>：相互作用阶段系统动量守恒（地面光滑）→ 求共同速度；</li>
+<li><strong>能量</strong>：机械能损失转化为内能 $Q = f \cdot s_{相对}$。</li>
+</ul>
+<h3>一、子弹打木块（瞬间嵌入型）</h3>
+<pre><code>动量守恒：m v₀ = (m + M) v_共
+能量：Q = f·d = ½mv₀² − ½(m+M)v_共²
+</code></pre>
+<blockquote>
+<p>d 为子弹打进木块的深度（相对位移）；Q 即系统动能损失，全部转化为内能。
+若木块固定在地面上：动量<strong>不守恒</strong>（墙/地对木块有外力），用动能定理 + 牛顿定律处理。</p>
+</blockquote>
+<h3>二、滑块—木板模型（地面光滑，板块间粗糙）</h3>
+<p>分两段讨论：</p>
+<ol>
+<li><strong>相对滑动阶段</strong>：滑块减速、木板加速，直到共速；</li>
+<li><strong>共速之后</strong>：若外力为零，二者一起匀速。</li>
+</ol>
+<p>关键量：</p>
+<ul>
+<li>共速：$v_共 = \dfrac{m v_0}{m + M}$（动量守恒一步出）。</li>
+<li>相对位移：用能量 $f \cdot s_{相对} = \dfrac{1}{2}mv_0^2 - \dfrac{1}{2}(m+M)v_共^2$ 求。</li>
+<li>板长（恰好不滑下）：$L_{min} = s_{相对}$。</li>
+</ul>
+<blockquote>
+<p><strong>是否共速的判断</strong>：先假设共速求出需求摩擦力 $f_{需}$，与最大静摩擦 $f_{max}=\mu N$ 比较；$f_{需} \le f_{max}$ 才能共速。</p>
+</blockquote>
+<h3>三、人船模型（动量为零系统）</h3>
+<p>系统初动量为零、水平方向不受外力：</p>
+<pre><code>m₁ x₁ = m₂ x₂，且 x₁ + x₂ = L（相对位移）
+</code></pre>
+<blockquote>
+<p>位移必须相对<strong>地面</strong>；适合求&quot;气球载人上升高度&quot;&quot;人在船上走船退多远&quot;等问题。</p>
+</blockquote>
+<h3>四、爆炸与反冲</h3>
+<ul>
+<li>动量守恒（内力 ≫ 重力等外力）；</li>
+<li>动能<strong>增加</strong>（化学能/其他形式能转化而来）——与碰撞&quot;动能不增&quot;正好相反；</li>
+<li>公式：$0 = m_1 v_1 + m_2 v_2$（静止爆炸），得 $\dfrac{v_1}{v_2} = \dfrac{m_2}{m_1}$，$\dfrac{E_{k1}}{E_{k2}} = \dfrac{m_2}{m_1}$。</li>
+</ul>
+<h3>方法步骤</h3>
+<ol>
+<li>画过程图，标出各阶段速度方向；</li>
+<li>判断守恒条件（系统、方向）；</li>
+<li>动量守恒求共速；</li>
+<li>能量关系求相对位移 / 内能 / 板长。</li>
+</ol>
+<h3>记忆口诀/技巧</h3>
+<blockquote>
+<p>&quot;先守恒求速度，后能量求位移&quot;；看到&quot;相对&quot;两个字，立刻想到 $Q = f \cdot s_{相对}$。</p>
+</blockquote>
+<hr />
+<h2>🗣️ 费曼讲解（讲给零基础的人听）</h2>
+<p>子弹打木块像&quot;钉子钉进木头&quot;：钉子（子弹）的冲劲一部分变成木头的运动，一部分变成钻进木头的深度（摩擦生热）。板块模型像&quot;你踩着滑板往前冲&quot;：你减速、滑板加速，直到你俩一样快就再也不相对滑了——这个&quot;一样快&quot;用动量守恒一步求出；你在滑板上蹭了多远，用能量（摩擦 × 相对位移）求。记住两条主线：<strong>动量管速度，能量管距离</strong>。</p>
+<h2>📝 解题示范（一道典型题完整流程）</h2>
+<blockquote>
+<p>题（二中卷题 10 原型）：质量 $M=3,\text{kg}$ 的木板静置在光滑水平面上，质量 $m=1,\text{kg}$ 的物块以 $v_0=4,\text{m/s}$ 滑上木板，$\mu=0.2$（$g=10$）。若木板足够长，求共同速度和相对滑动距离。</p>
+</blockquote>
+<ol>
+<li>动量守恒：$v_共 = \dfrac{mv_0}{m+M} = \dfrac{1\times4}{4} = 1,\text{m/s}$。</li>
+<li>能量：$Q = \mu mg\cdot s_{相对} = \dfrac12mv_0^2 - \dfrac12(m+M)v_共^2 = 8 - 2 = 6,\text{J}$。</li>
+<li>$s_{相对} = \dfrac{6}{0.2\times1\times10} = 3,\text{m}$。</li>
+<li><strong>检验</strong>：损失动能 6 J &lt; 初动能 8 J，板长 ≥ 3 m 才不滑下——合理 ✅</li>
+</ol>
+<h2>✅ 复盘要点（自测清单，能讲清即打勾）</h2>
+<ul>
+<li>[ ] &quot;动量求共速、能量求相对位移&quot;双主线能脱口而出</li>
+<li>[ ] 木块固定时动量不守恒（墙是外力）能讲清</li>
+<li>[ ] 是否共速的判断：$f_需$ vs $f_{max}=\mu N$</li>
+<li>[ ] 恰好不滑下 → $L_{min}=s_{相对}$ 的条件反射</li>
+<li>[ ] 爆炸/反冲动能<strong>增加</strong>、碰撞动能不增，方向不记反</li>
+</ul>
+<hr />
+<h2>关联卡片</h2>
+<ul>
+<li><a href="../%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%BD%91%E7%BB%9C/%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%BD%91%E7%BB%9C_%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B.html">动量守恒定律</a></li>
+<li><a href="%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95_%E7%A2%B0%E6%92%9E%E7%B1%BB%E6%A8%A1%E5%9E%8B%E9%80%9A%E6%B3%95.html">碰撞类模型通法</a> — 完全非弹性碰撞的兄弟模型</li>
+</ul>
+<hr />
+<h2>备注</h2>
+<ul>
+<li>月考压轴常把&quot;板块 + 共速判断 + 能量&quot;组合出题，是 Day 2 重点攻克的题型。</li>
+</ul>
+
+</main>
+<button class="print-btn" onclick="window.print()">🖨️ 打印本页</button>
+<footer class="footer"><div class="wrap">
+<span>陪伴申悦一路到 2028 高考</span>
+<span>内容维护：修改 Markdown 源文件后运行 <code>python build_site.py</code> 重新生成</span>
+</div></footer>
+</body>
+</html>

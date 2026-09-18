@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【光的折射与全反射】 · 申悦学习 · AI 指导物理学习</title>
+<meta name="description" content="知识库 · 【光的折射与全反射】">
+<link rel="stylesheet" href="../../assets/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[
+    {left:'$$',right:'$$',display:true},
+    {left:'$',right:'$',display:false}
+  ]});"></script>
+
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../../index.html">🌕 申悦学习 · AI 指导物理学习</a>
+<nav class="site-nav">
+<a href="../../index.html">首页</a>
+<a href="../../plan.html">3天辅导计划</a>
+<a href="../../parent-guide.html">速成指南·静电场</a>
+<a href="../../parent-guide-momentum.html">速成指南·动量</a>
+<a href="../../kb/index.html">知识库</a>
+</nav>
+</div></header>
+<main class="page">
+<h1>【光的折射与全反射】</h1>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>来源</strong></td>
+<td>人教版选必一第四章；2025.10 华附卷题 3/6/13、铁一卷题 13</td>
+</tr>
+<tr>
+<td><strong>时间标签</strong></td>
+<td>#高二深化</td>
+</tr>
+<tr>
+<td><strong>难度</strong></td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td><strong>状态</strong></td>
+<td>❌未理解</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>核心内容</h2>
+<h3>核心公式</h3>
+<pre><code>折射定律：n = sin i / sin r  （i 为空气侧角度，r 为介质侧角度）
+折射率：n = c/v             （光在介质中速度 v = c/n，变小）
+全反射临界角：sin C = 1/n    （光从介质射向空气，i &gt; C 时全反射）
+</code></pre>
+<h3>关键概念</h3>
+<ul>
+<li><strong>折射率与频率</strong>：同一介质中，频率越高的光（紫 &gt; 红）折射率越大 → 偏折越厉害、速度越小、临界角越小<strong>越容易发生全反射</strong>。这是色散比较题的万能链条：</li>
+</ul>
+<p>$$f\uparrow \Rightarrow n\uparrow \Rightarrow v\downarrow,\ \sin C\downarrow$$</p>
+<ul>
+<li><strong>色散</strong>：复色光入射介质，折射角不同而分开（华附卷题 3：比较 a、b 两光的频率、速度、临界角，全用上面链条）。</li>
+</ul>
+<h3>方法步骤：几何光学计算题通法（华附题 13 泳池灯、铁一题 13 光学元件）</h3>
+<ol>
+<li><strong>画光路</strong>：在界面处画<strong>法线</strong>，标出入射角/折射角（角度一律相对法线）。</li>
+<li><strong>列方程</strong>：每个界面写一次折射定律；有&quot;恰好全反射&quot;字样就写 $\sin C = 1/n$ 且入射角 $= C$。</li>
+<li><strong>几何关系</strong>：用三角形边角关系（圆、菱形、棱镜角度）把角与边连起来——本类题的真正难点在<strong>平面几何</strong>。</li>
+<li>求时间：$t = \dfrac{\text{光程}}{v} = \dfrac{n\cdot s}{c}$（介质中每段都要乘 n）。</li>
+</ol>
+<h3>典型结论</h3>
+<ul>
+<li>水中点光源照出水面：出水区域是以光源正上方为圆心的<strong>圆</strong>，半径 $r = h\tan C$（华附题 13 泳池灯原型）。</li>
+<li>平行玻璃砖：出射光与入射光<strong>平行但侧移</strong>；半圆玻璃砖沿半径方向入射<strong>不偏折</strong>。</li>
+<li>三棱镜：光向<strong>底边</strong>偏折；紫光偏折大于红光。</li>
+</ul>
+<h3>记忆口诀</h3>
+<blockquote>
+<p>&quot;空气侧角大，介质侧角小；频率高者 n 大，临界角小先全反。&quot;</p>
+</blockquote>
+<hr />
+<h2>🗣️ 费曼讲解（讲给零基础的人听）</h2>
+<p>光从空气进水，就像小车从水泥地冲进沙地：一侧轮子先变慢，车头就拐了弯——这就是折射。弯多少由&quot;折射率&quot;说了算，紫光比红光&quot;更怕慢&quot;，所以拐得更狠（色散）。全反射则是光在介质里往空气跑时，角度太&quot;平&quot;，一头撞在界面上被弹回来——角度超过临界角就出不去，光纤就靠这个把光关在里头。</p>
+<h2>📝 解题示范（一道典型题完整流程）</h2>
+<blockquote>
+<p>题（华附卷题 13 原型）：泳池水深 $h=2,\text{m}$，水的折射率 $n=\dfrac{4}{3}$，池底有一点光源。求有光射出的水面区域半径。</p>
+</blockquote>
+<ol>
+<li>全反射临界角：$\sin C = \dfrac{1}{n} = \dfrac{3}{4}$。</li>
+<li>由 $\sin C=\dfrac{3}{4}$ 得 $\cos C=\dfrac{\sqrt7}{4}$，$\tan C=\dfrac{3}{\sqrt7}$。</li>
+<li>几何关系：出水区域半径 $r = h\tan C = 2\times\dfrac{3}{\sqrt7} = \dfrac{6}{\sqrt7} \approx 2.27,\text{m}$。</li>
+<li>面积 $S = \pi r^2 = \dfrac{36\pi}{7} \approx 16.2,\text{m}^2$。</li>
+<li><strong>检验</strong>：n 越大临界角越小、出水圆越小——物理直觉一致 ✅</li>
+</ol>
+<h2>✅ 复盘要点（自测清单，能讲清即打勾）</h2>
+<ul>
+<li>[ ] 色散链条 $f\uparrow\Rightarrow n\uparrow\Rightarrow v\downarrow,\sin C\downarrow$ 能默写</li>
+<li>[ ] 全反射两条件（光密→光疏、i&gt;C）能脱口而出</li>
+<li>[ ] 角度一律相对<strong>法线</strong>量，画光路先画法线</li>
+<li>[ ] 介质中求时间记得 $t=\dfrac{ns}{c}$</li>
+<li>[ ] 棱镜/半圆砖/平行砖的典型光路结论能各说一条</li>
+</ul>
+<hr />
+<h2>关联卡片</h2>
+<ul>
+<li><a href="../%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95/%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%85%89%E5%AD%A6%E5%AE%9E%E9%AA%8C.html">光的干涉衍射与光学实验</a></li>
+<li><a href="../%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95/%E9%AB%98%E4%BA%8C%E6%B7%B1%E5%8C%96_%E7%89%A9%E7%90%86_%E5%85%B8%E5%9E%8B%E9%A2%98%E5%9E%8B%E4%B8%8E%E6%96%B9%E6%B3%95_%E9%9D%99%E7%94%B5%E5%9C%BA%E6%9C%88%E8%80%83%E9%A2%98%E5%9E%8B%E5%BD%92%E7%BA%B3.html">静电场月考题型归纳</a> — 月考另一主线</li>
+</ul>
+<hr />
+<h2>备注</h2>
+<ul>
+<li>全反射两条件缺一不可：①光密→光疏（介质→空气）；②入射角 &gt; 临界角。从空气射入玻璃永远不会全反射。</li>
+</ul>
+
+</main>
+<button class="print-btn" onclick="window.print()">🖨️ 打印本页</button>
+<footer class="footer"><div class="wrap">
+<span>陪伴申悦一路到 2028 高考</span>
+<span>内容维护：修改 Markdown 源文件后运行 <code>python build_site.py</code> 重新生成</span>
+</div></footer>
+</body>
+</html>
