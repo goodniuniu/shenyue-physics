@@ -23,7 +23,7 @@
 | **打印支持** | ✅ 每张卡片页右下角"🖨️ 打印本页"按钮 + 打印样式（隐藏导航/页脚、防表格断页、A4 边距），供碎片化复习 |
 | **中秋打印包 PDF（v6）** | ✅ `打印包/中秋打印包_物理.pdf`（16 页 A4，四部分：概念检验 30 问 ×3 + 陷阱卡 ×2 + 思想方法速查表 ×5 + **家长提问卡 30 问**），reportlab 生成；生成器 `build_print_pack.py`（改卡片后重跑即可再生成）；预览拼图 `打印包/预览_contact-sheet.png`（2026-09-19 已更新为 16 页版）；构建时同步到 `docs/print/`，网站首页有下载入口（页数由 build_site.py 读 PDF 自动生成，不再硬编码） |
 | **家长提问卡 + 复习日历 + 错题入库（v6）** | ✅ `家长支持/家长提问卡_费曼回话题库.md`（口试 30 问，与检验卷笔试互补）、`知识库/复盘追踪/艾宾浩斯复习日历_中秋起.md`（1/2/4/7/15 天打卡表）、`家长支持/错题入库速查_考后三步.md`；公式一律用 `$...$`（Unicode 上下标在 PDF 字体中缺字形，网站/PDF 双端兼容） |
-| **周复盘定时任务** | ✅ 「物理知识库 · 每周日晚复盘」每周日 20:17 Asia/Shanghai，local_conversation，复盘后自动 build + push（automation_838b11e7，由旧任务改造） |
+| **周复盘定时任务** | ✅ 「物理知识库 · 每周日晚复盘」每周日 20:17 Asia/Shanghai，local_conversation，复盘后自动 build + push（**automation_bc0985f1-9227-45c4-a029-1b0d873ebfff**，2026-09-19 晚重建；旧 automation_838b11e7 已失效废弃） |
 | 中秋 3 天辅导计划 v3 定稿（静电场主线，范围已确认） | ✅ `中秋3天辅导计划_9月25-27日.md` |
 | 长假专项复习设计框架（国庆待用） | ✅ `家长支持/长假专项复习设计框架.md`（3 天/7 天模板 + 五步法） |
 | 家长物理速成指南（静电场篇 + 动量篇） | ✅ `家长支持/` 两份 |
@@ -82,7 +82,7 @@ package.json                        # dev: vite docs --config vite.config.js
 10. PDF 提取文本中公式符号大量丢失（图片/特殊字体），只可用于检索考点，做题用原卷 PDF。
 11. **reportlab 打印包三坑**（`build_print_pack.py` 已处理）：CJK 字体缺 Unicode 上下标字形 → 用 `<sub>/<super>` 标签；✅⚠️❌ 等 emoji 缺字形 → conv() 映射为"已掌握/待强化/未理解"；含 HTML 标签的标题要先包 `<b>` 再过 conv（conv 会转义）。质检用 kimi-pdf skill 渲染逐页目检。
 12. **kb 页面相对路径 = `"../" * len(rel.parts)`**（页面在 docs/kb/ 下，kb/ 本身也算一层）；`kb/index.html` 用 `"../"`。曾因少算一级导致全部知识库页面样式+KaTeX 404，公式显示原始 `$...$`（2026-09-18 修复）。
-13. **定时任务**：「物理知识库 · 每周日晚复盘」（automation_838b11e7，每周日 20:17 Asia/Shanghai，local_conversation，复盘后自动 build_site.py + push）。由旧的"2028广东新高考知识库·周复盘"改造而来。
+13. **定时任务**：「物理知识库 · 每周日晚复盘」（**automation_bc0985f1-9227-45c4-a029-1b0d873ebfff**，每周日 20:17 Asia/Shanghai，local_conversation，复盘后自动 build_site.py + push）。2026-09-19 晚重建（旧 automation_838b11e7 已失效废弃）。
 
 ## 6. 常用工作流（用户会直接下的指令）
 
