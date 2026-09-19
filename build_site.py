@@ -109,6 +109,7 @@ NAV = """<nav class="site-nav">
 <a href="{base}plan.html">3天辅导计划</a>
 <a href="{base}parent-guide.html">速成指南·静电场</a>
 <a href="{base}parent-guide-momentum.html">速成指南·动量</a>
+<a href="{base}holiday-framework.html">长假专项框架</a>
 <a href="{base}kb/index.html">知识库</a>
 </nav>"""
 
@@ -207,6 +208,8 @@ def main():
          "家长照原话问、看关键词打钩：静电场12问+动量10问+光与振动波8问，每天睡前15分钟"),
         (ROOT / "家长支持" / "错题入库速查_考后三步.md", "mistake-intake.html", "考后错题入库速查",
          "月考后三步走：拍照→发给Kimi→查看失分分析，错题自动变卡片"),
+        (ROOT / "家长支持" / "长假专项复习设计框架.md", "holiday-framework.html", "长假专项复习设计框架",
+         "小长假/长假专项复习通用模板：五步法 + 3天/7天日程模板，国庆专项按此生成"),
     ]
     extra_guide = '<button class="print-btn" onclick="window.print()">🖨️ 打印速查表</button>'
     for src, out, fb_title, desc in singles:
@@ -264,9 +267,11 @@ def main():
 
 <section class="cards">
 <a class="card" href="print/中秋打印包_物理.pdf" download><div class="icon">🖨️</div><h3>中秋打印包 · 点击下载</h3>
-<p>A4 共 11 页：概念检验 30 问 ×3（含答案）+ 易错陷阱卡 ×2 + 思想方法速查表 ×5，打印店打开本页即可下载打印。</p></a>
-<a class="card" href="plan.html"><div class="icon">📅</div><h3>中秋 3 天辅导计划（v2）</h3>
-<p>9.25 真题诊断 + 静电场地基 → 9.26 静电场题型突破 + 机动板块 → 9.27 真题模拟与错题复盘，每天约 4 小时。</p></a>
+<p>A4 共 13 页四部分：概念检验 30 问 ×3（含答案）+ 易错陷阱卡 ×2 + 思想方法速查表 ×5 + 家长提问卡 30 问，打印店打开本页即可下载打印。</p></a>
+<a class="card" href="plan.html"><div class="icon">📅</div><h3>中秋 3 天辅导计划（v3 定稿）</h3>
+<p>9.25 真题诊断 + 静电场地基 → 9.26 静电场题型突破 + 机动板块 → 9.27 真题模拟与错题复盘，每天约 4 小时。月考范围已确认为四校真题范围。</p></a>
+<a class="card" href="holiday-framework.html"><div class="icon">🏗️</div><h3>长假专项复习设计框架</h3>
+<p>中秋专项是首期实例：五步法 + 3天/7天日程模板。国庆专项（10.1–10.7）将在月考分析后按此生成。</p></a>
 <a class="card" href="parent-guide.html"><div class="icon">👨‍👧</div><h3>家长速成指南 · 静电场篇</h3>
 <p>很久没碰物理也能陪学："山坡类比"建立静电场直觉、三道能讲给孩子听的例题、批改四问清单。</p></a>
 <a class="card" href="kb/物理/素材与拓展/高二深化_物理_素材与拓展_广州四校高二上月考真题分析报告.html"><div class="icon">📊</div><h3>四校真题分析报告</h3>
@@ -286,11 +291,13 @@ def main():
 <table>
 <tr><th>时间</th><th>里程碑</th></tr>
 <tr><td>9.18</td><td>知识库建库；入库广州四校月考真题，修订月考范围（静电场为第一主线），卡片扩至 14 张</td></tr>
+<tr><td>9.19</td><td>月考范围确认为四校真题范围，中秋计划 v3 定稿；打印包定稿；长假专项复习设计框架上线</td></tr>
 <tr><td>9.25（周五）</td><td>Day 1：执信卷真题摸底 → 电场强度、电势与电势能概念地基</td></tr>
-<tr><td>9.26（周六）</td><td>Day 2：静电场题型突破（电容器/偏转/综合）+ 机动板块（动量/光/振动波）</td></tr>
+<tr><td>9.26（周六）</td><td>Day 2：静电场题型突破（电容器/偏转/综合）+ 机动板块（动量/光/振动波，说不清进度则静电场深化）</td></tr>
 <tr><td>9.27（周日）</td><td>Day 3：华附卷限时模拟 → 逐题复盘 → 错题入库</td></tr>
 <tr><td>9.28 当周</td><td>高二第一次月考 🎯</td></tr>
 <tr><td>考后</td><td>试卷拍照入库 → AI 分析失分板块 → 更新状态表 → 每周回讲常态化</td></tr>
+<tr><td>10.1–10.7</td><td>国庆长假专项：按长假专项框架设计，主线待月考分析后确定</td></tr>
 </table>
 </div>
 
