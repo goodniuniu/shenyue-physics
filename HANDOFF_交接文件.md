@@ -57,6 +57,7 @@
   复盘追踪/知识掌握状态表.md
 build_site.py                       # Markdown → docs/ 静态站（markdown-it-py，禁用 linkify，标题/描述已 HTML 转义）
 build_print_pack.py                 # 知识卡片 → 打印包/中秋打印包_物理.pdf（reportlab，Unicode 上下标用 <sub>/<super>，emoji 映射为中文标签）
+build_preview.py                    # 打印包 PDF → 打印包/预览_contact-sheet.png（PDF 更新后重跑）
 打印包/                             # 打印包 PDF + 预览_contact-sheet.png（不进 docs/）
 docs/                               # 生成的网站（GitHub Pages 发布此目录，含 .nojekyll）
 vite.config.js                      # 修复 GBK 编码请求导致 vite "URI malformed"
