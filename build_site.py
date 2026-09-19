@@ -195,6 +195,14 @@ def main():
         for pdf in print_src.glob("*.pdf"):
             shutil.copy2(pdf, DOCS / "print" / pdf.name)
 
+    # 首页打印包页数自动读取，避免与 PDF 实际页数漂移
+    print_pages = ""
+    try:
+        from pypdf import PdfReader
+        print_pages = f" 共 {len(PdfReader(str(print_src / '中秋打印包_物理.pdf')).pages)} 页"
+    except Exception:
+        pass
+
     n = 0
 
     # 1) 根级单页
@@ -267,7 +275,7 @@ def main():
 
 <section class="cards">
 <a class="card" href="print/中秋打印包_物理.pdf" download><div class="icon">🖨️</div><h3>中秋打印包 · 点击下载</h3>
-<p>A4 共 13 页四部分：概念检验 30 问 ×3（含答案）+ 易错陷阱卡 ×2 + 思想方法速查表 ×5 + 家长提问卡 30 问，打印店打开本页即可下载打印。</p></a>
+<p>A4{print_pages}四部分：概念检验 30 问 ×3（含答案）+ 易错陷阱卡 ×2 + 思想方法速查表 ×5 + 家长提问卡 30 问，打印店打开本页即可下载打印。</p></a>
 <a class="card" href="plan.html"><div class="icon">📅</div><h3>中秋 3 天辅导计划（v3 定稿）</h3>
 <p>9.25 真题诊断 + 静电场地基 → 9.26 静电场题型突破 + 机动板块 → 9.27 真题模拟与错题复盘，每天约 4 小时。月考范围已确认为四校真题范围。</p></a>
 <a class="card" href="holiday-framework.html"><div class="icon">🏗️</div><h3>长假专项复习设计框架</h3>
