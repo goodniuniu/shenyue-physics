@@ -161,11 +161,11 @@ def parse_check_card(path):
     part1 = section(text, "## 第一部分", ["## 第二部分"])
     part2 = section(text, "## 第二部分", ["## ✅"])
     blk_a = section(part1, "### A.", ["### B."])
-    blk_b = section(part1, "### B.", ["---", "## "])
+    blk_b = section(part1, "### B.", ["\n---", "## "])
     qa = parse_numbered_lines(blk_a)
     qb = parse_numbered_lines(blk_b)
     blk_a2 = section(part2, "### A.", ["### B."])
-    blk_b2 = section(part2, "### B.", ["---", "## "])
+    blk_b2 = section(part2, "### B.", ["\n---", "## "])
     ta = parse_md_tables(blk_a2)[0]
     tb = parse_md_tables(blk_b2)[0]
     std = section(text, "## ✅ 过关标准", ["## 错题对应", "## 备注"])
